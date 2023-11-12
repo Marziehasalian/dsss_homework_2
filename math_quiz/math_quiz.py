@@ -1,22 +1,17 @@
 #Marzieh Asalian
 import random
-
 # Generate_random_number generates a random integer between min and max and include this max and min
 # for example: if max:3 and min:1 randomly this function pic two number from 1,2,3
-
 def Generate_random_number(min_random, max_random):
     """
         Generate_random_number
-
         Parameters:
         - min_random (int): The max number.
         - min_random (int): The min number.
-
         Returns:
         int: a random int between min_random and  max_random
         """
     return random.randint(min_random, max_random)
-
 def Generate_random_operator():
     """
             Generate_Random_operator
@@ -33,13 +28,10 @@ def Generate_random_operator():
 def Generate_random_Function(first_random_number, second_random_number, Random_operator):
     """
         Generate_random_number
-
         Parameters:
         - first_random_number (int): random number .
         - second_random_number (int): random number.
         - Random_operator (str): random operator.
-
-
         Returns:
         random_function(str): a random function
         correct_answer(int): correct answer of that random function
@@ -71,8 +63,10 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(steps_of_quiz):
-        #first_random_number:generate first random unt number between 1 and 10, first_random_number: generate second random int number between 1 and 5, and o generate random operation
-        first_random_number = Generate_random_number(1, 10); first_random_number = Generate_random_number(1, 5); Random_operator = Generate_random_operator()
+        #first_random_number:generate first random unt number between 1 and 10, first_random_number: generate second random int number between 1 and 5,
+        # and o generate random operation
+        first_random_number = Generate_random_number(1, 10); first_random_number = Generate_random_number(1, 5);
+        Random_operator = Generate_random_operator()
         #PROBLEM is the random function with that random variable and ANSWER is the correct answer to that function
         PROBLEM, ANSWER = Generate_random_Function(first_random_number, first_random_number, Random_operator)
         print(f"\nQuestion: {PROBLEM}")
