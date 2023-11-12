@@ -1,5 +1,12 @@
 #Marzieh Asalian
 import random
+
+def main():
+
+    """
+        for installing and calling
+        """
+    math_quiz()
 # Generate_random_number generates a random integer between min and max and include this max and min
 # for example: if max:3 and min:1 randomly this function pic two number from 1,2,3
 def Generate_random_number(min_random, max_random):
